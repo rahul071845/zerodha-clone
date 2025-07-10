@@ -1,0 +1,138 @@
+.apps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.apps-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.apps-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.apps-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.apps-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.app-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.app-card.active {
+  border-color: #3498db;
+  background-color: #f8fafc;
+}
+
+.app-logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.app-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.category {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.app-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.app-details p {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.connect-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.connect-button:hover {
+  background: #2980b9;
+}
+
+.apps-sidebar {
+  flex: 1;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.category-list li:hover {
+  text-decoration: underline;
+}
+
+.disclaimer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff9db;
+  border-radius: 6px;
+  border-left: 4px solid #ffd43b;
+}
+
+.disclaimer h4 {
+  margin-top: 0;
+  color: #5f3dc4;
+}
+
+.disclaimer p {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+}

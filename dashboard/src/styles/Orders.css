@@ -1,0 +1,134 @@
+.orders-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders-header h3{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  margin-bottom: 2%;
+}
+
+.orders-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table tr {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.orders-table th {
+  text-align: right;
+  padding: 15px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.orders-table tr th:first-child,
+.orders-table tr td:first-child {
+  text-align: left;
+}
+
+.orders-table tr td:first-child p {
+    background: rgb(255, 197, 197);
+    color: rgb(233, 120, 120);
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.orders-table tr td:last-child {
+  font-size: 0.6rem;
+}
+
+.orders-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.orders-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.orders-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.orders-table tr th:nth-child(1),
+.orders-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.orders-table tr td:nth-child(1),
+.orders-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.orders-controls {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.filter-tabs {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.filter-tab {
+  border: none;
+  background: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.filter-tab.active {
+  background: white;
+  color: #3b82f6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sort-info {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.orders-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.empty-state {
+  text-align: center;
+  max-width: 400px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
