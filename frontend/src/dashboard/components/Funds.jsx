@@ -35,8 +35,8 @@ const Funds = () => {
         </Link>
       </div>
 
-      <div className="row">
-        <div className="col">
+      <div className="fund-row">
+        <div className="fund-col">
           <span>
             <p>Equity</p>
           </span>
@@ -97,7 +97,7 @@ const Funds = () => {
           </div>
         </div>
 
-        <div className="col">
+        <div className="fund-col">
           <div className="commodity">
             <p>You don't have a commodity account</p>
             <Link className="btn btn-blue">Open Account</Link>

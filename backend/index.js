@@ -13,7 +13,7 @@ const userRouter = require("./routers/user");
 const summaryRouter = require("./routers/summary");
 const fundRouter = require("./routers/fund");
 
-const allowedOrigins = [process.env.DASHBOARD_URL, process.env.FRONTEND_URL];
+const allowedOrigins = [process.env.FRONTEND_URL];
 
 app.use(
   cors({
@@ -40,7 +40,6 @@ app.use("/users", userRouter);
 app.use("/summary", summaryRouter);
 app.use("/funds", fundRouter);
 
-// 404 fallback
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found" });
 });

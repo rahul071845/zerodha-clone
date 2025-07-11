@@ -12,8 +12,8 @@ function Signup() {
   });
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-
   const { email, password, username } = inputValue;
+  const Navigate = useNavigate();
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -91,7 +91,7 @@ function Signup() {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = import.meta.env.VITE_DASHBOARD_URL;
+          Navigate("/dashboard");
         }, 1000);
       } else {
         handleError(message);

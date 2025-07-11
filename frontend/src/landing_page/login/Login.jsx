@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "../signup/Signup.css";
@@ -11,8 +11,8 @@ function Login() {
   });
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-
   const { email, password } = inputValue;
+  const Navigate = useNavigate();
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -63,7 +63,7 @@ function Login() {
       if (data.success) {
         handleSuccess(data.message);
         setTimeout(() => {
-          window.location.href = import.meta.env.VITE_DASHBOARD_URL;
+          Navigate("/dashboard")
         }, 1000);
       } else {
         handleError(data.message);

@@ -1,9 +1,4 @@
-body {
-  font-family: 'Inter', 'KohinoorBangla', 'Nunito', sans-serif !important;
-}
-
-.nav-link{
-  font-size: 0.9rem;
-  opacity: 0.6;
-  margin-left: 2rem;
+body{
+    margin: 0;
+    padding: 0;
 }

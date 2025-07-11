@@ -27,7 +27,7 @@ function BuyActionWindow({ uid }) {
   };
 
   return (
-    <div className={`container ${active ? "active" : ""}`} id="buy-window">
+    <div className={`window-container ${active ? "active" : ""}`} id="buy-window">
       <div className="regular-order">
         <div className="inputs">
           <fieldset>

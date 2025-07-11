@@ -1,16 +1,20 @@
-import { useState } from 'react';
-import Navbar from './landing_page/Navbar';
-import Footer from './landing_page/Footer';
-import HomePage from './landing_page/home/HomePage';
+import { Routes, Route, useLocation } from "react-router-dom";
+import LandingPage from "./landing_page/landingPage/LandingPage.jsx";
+import DashboardPage from "./dashboard/components/dashboardPage/DashboardPage.jsx";
+import "./App.css"
 
 function App() {
+  const location = useLocation();
+  const isDashboard = location.pathname.startsWith("/dashboard");
+
   return (
-    <>
-      <Navbar />
-      <HomePage />
-      <Footer />
-    </>
-  )
+    <Routes>
+      {/* Landing Page */}
+      <Route path="/*" element={<LandingPage />} />
+      {/* Dashboard */}
+      <Route path="/dashboard/*" element={<DashboardPage />} />
+    </Routes>
+  );
 }
 
 export default App;

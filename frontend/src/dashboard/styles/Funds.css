@@ -29,7 +29,7 @@
   background: #4184f3;
 }
 
-.row {
+.fund-row {
   width: 100%;
   display: flex;
   align-items: center;
@@ -37,12 +37,12 @@
   margin-top: 5%;
 }
 
-.col {
+.fund-col {
   flex-basis: 48%;
   text-align: left;
 }
 
-.col span {
+.fund-col span {
   display: flex;
   align-items: center;
   margin-bottom: 2%;

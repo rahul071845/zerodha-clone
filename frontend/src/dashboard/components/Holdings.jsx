@@ -70,8 +70,8 @@ const Holdings = () => {
         </table>
       </div>
 
-      <div className="row">
-        <div className="col">
+      <div className="hold-row">
+        <div className="hold-col">
           <h5>
             {totalInvestment.toLocaleString("en-IN", {
               minimumFractionDigits: 2,
@@ -79,7 +79,7 @@ const Holdings = () => {
           </h5>
           <p>Total investment</p>
         </div>
-        <div className="col">
+        <div className="hold-col">
           <h5>
             {currentValue.toLocaleString("en-IN", {
               minimumFractionDigits: 2,
@@ -87,7 +87,7 @@ const Holdings = () => {
           </h5>
           <p>Current value</p>
         </div>
-        <div className="col">
+        <div className="hold-col">
           <h5 className={pnlClass}>
             {pnl.toFixed(2)} ({pnlPercent}%)
           </h5>

@@ -77,7 +77,7 @@ button[type="submit"] {
 }
 
 /* Login link styling */
-span {
+.form-group span {
   color: #6c757d;
   font-size: 0.95rem;
   display: block;

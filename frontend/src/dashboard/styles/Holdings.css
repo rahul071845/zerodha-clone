@@ -62,36 +62,36 @@
   color: rgb(250, 118, 78);
 }
 
-.row {
+.hold-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
 }
 
-.col {
+.hold-col {
   flex-basis: 33%;
 }
 
-.col h5 {
+.hold-col h5 {
   font-size: 1.8rem;
   color: rgb(71, 71, 71);
   font-weight: 300;
 }
 
-.col h5 span {
+.hold-col h5 span {
   font-weight: 300;
   font-size: 0.9rem;
 }
 
-.col p {
+.hold-col p {
   font-size: 0.8rem;
   color: rgb(153, 153, 153);
   font-weight: 300;
   margin-top: 2%;
 }
 
-.row .col:last-child h5 {
+.hold-row .hold-col:last-child h5 {
   color: rgb(72, 194, 55);
 }
 

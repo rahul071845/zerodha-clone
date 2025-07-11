@@ -63,7 +63,7 @@ const Orders = () => {
               You haven't placed any{" "}
               {filter !== "all" ? filter.toLowerCase() : ""} orders yet.
             </p>
-            <Link to="/" className="btn-primary">
+            <Link to="/dashboard" className="btn-primary">
               Start Trading
             </Link>
           </div>
